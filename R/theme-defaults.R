@@ -447,9 +447,9 @@ theme_custom <- function(base_size             = 12,
                          col.L                 = 'black',
                          col.R                 = 'black',
                          col.grid.minor        = "white",
-                         col.grid.T = col.grid.T,
-                         col.grid.L = col.grid.L,
-                         col.grid.R = col.grid.R){
+                         col.grid.T = "white",
+                         col.grid.L = "white",
+                         col.grid.R = "white"){
   
   #Start with the base theme, then replace some elements
   theme_ggtern(base_size, base_family) %+replace%
