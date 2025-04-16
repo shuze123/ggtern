@@ -446,51 +446,6 @@ theme_custom <- function(base_size             = 12,
                          col.T                 = 'black',
                          col.L                 = 'black',
                          col.R                 = 'black',
-                         col.grid.minor        = "white"){
-  
-  #Start with the base theme, then replace some elements
-  theme_ggtern(base_size, base_family) %+replace%
-  
-  #Elements to replace
-  theme(
-    tern.plot.background    = element_rect(fill  = tern.plot.background,size=NA,color=NA),
-    tern.panel.background   = element_rect(fill  = tern.panel.background),
-    tern.panel.grid.major   = element_line(linetype=6,size=0.50),
-    tern.panel.grid.major.T = element_line(color = col.T),
-    tern.panel.grid.major.L = element_line(color = col.L),
-    tern.panel.grid.major.R = element_line(color = col.R),
-    tern.panel.grid.minor   = element_line(linetype=1,size=0.25,colour=col.grid.minor),
-    tern.axis.title.T       = element_text(color = col.T),
-    tern.axis.title.L       = element_text(color = col.L),
-    tern.axis.title.R       = element_text(color = col.R),
-    tern.axis.text.T        = element_text(color = col.T),
-    tern.axis.text.L        = element_text(color = col.L),
-    tern.axis.text.R        = element_text(color = col.R),
-    tern.axis.arrow.T       = element_line(color = col.T),
-    tern.axis.arrow.L       = element_line(color = col.L),
-    tern.axis.arrow.R       = element_line(color = col.R),
-    tern.axis.arrow.text.T  = element_text(color = col.T),
-    tern.axis.arrow.text.L  = element_text(color = col.L),
-    tern.axis.arrow.text.R  = element_text(color = col.R),
-    tern.axis.line.T        = element_line(color = col.T),
-    tern.axis.line.L        = element_line(color = col.L),
-    tern.axis.line.R        = element_line(color = col.R),
-    tern.axis.ticks.major.T = element_line(color = col.T),
-    tern.axis.ticks.major.L = element_line(color = col.L),
-    tern.axis.ticks.major.R = element_line(color = col.R),
-    tern.axis.ticks.minor.T = element_line(color = col.T),
-    tern.axis.ticks.minor.L = element_line(color = col.L),
-    tern.axis.ticks.minor.R = element_line(color = col.R)
-  )
-}
-
-theme_custom2 <- function(base_size             = 12,
-                         base_family           = "",
-                         tern.plot.background  = NULL,
-                         tern.panel.background = NULL,
-                         col.T                 = 'black',
-                         col.L                 = 'black',
-                         col.R                 = 'black',
                          col.grid.minor        = "white",
                          col.grid.T = col.grid.T,
                          col.grid.L = col.grid.L,
@@ -531,6 +486,7 @@ theme_custom2 <- function(base_size             = 12,
     tern.axis.ticks.minor.R = element_line(color = col.R)
   )
 }
+
 
 #' @rdname ggtern_themes
 #' @export
